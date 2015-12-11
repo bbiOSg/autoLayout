@@ -80,7 +80,7 @@
     atr.frame = CGRectMake(self.currentX, self.currentY, itemW, self.itemHeight);
     
     self.currentMaxX = self.currentX + itemW + self.sectionInsert.right;
-    if (self.currentMaxX - screenW > 8) {
+    if (self.currentMaxX - screenW > 0) {
         self.currentX = self.sectionInsert.left;
         self.currentY = self.currentY + self.itemHeight + self.rowMargin;
         atr.frame = CGRectMake(self.currentX, self.currentY, itemW, self.itemHeight);
